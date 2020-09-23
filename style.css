@@ -1,0 +1,63 @@
+header{
+	color: blue
+}
+footer {}
+.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ce1212;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.aside{
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #ce1212;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.main {
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+
+#div{
+    column-count:2;
+    column-gap:40px;
+    column-rule:3px;
+	border: 2px solid;
+}
+
+#footer{
+	 background-color: #5178e6;
+	 bottom:0;
+}
+
+audio, button{
+	box-shadow: 5px 5px 3px red;
+}
+
+body{
+	background: url("white-stone-1280.gif") no-repeat fixed center;
+}
+
+
+
+

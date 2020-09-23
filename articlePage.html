@@ -1,0 +1,87 @@
+<!DOCTYPE html><meta charset="utf-8">
+<link rel="stylesheet" href="style.css" type="text/css">
+<html>
+<head>
+<title>Articolo</title>
+</head>
+<body>
+<header class="main">
+    <h1 color=#ce1212>SuperBlog</h1>
+	<p>Benvenuti su SuperBlog, dove troverai risposta ad ogni tua domanda.</p>
+</header>
+	<nav id=mySidenav class=sidenav>
+	 <h1>Menu</h1>
+	 <ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="autori.html">Gli autori</a></li>
+		<li><a href="articoli.html">Gli articoli</a></li>
+	</ul>
+	</nav>
+
+	
+<section class=main>
+	<header>
+		<h1>Lorem ipsum</h1>
+	</header>
+	<article>
+		<h2>Lorem ipsum dolor sit amet, brute tantas per in, te his sumo choro volutpat.</h2>
+		<div id=div>Lorem ipsum dolor sit amet, brute tantas per in, te his sumo choro volutpat. Pri iriure albucius assentior id. Mea discere fastidii sadipscing ex, mel esse ipsum dicit in, labore nostro antiopam in nam. Est sonet dolore ex. An utinam rationibus consequuntur eos.
+			At pro persius mandamus sapientem. Cu erat efficiendi his, an perfecto corrumpit forensibus duo. Quo ea quas invidunt principes, nostro placerat elaboraret at mea. Solet partem dolorum est in, nam nostro quaestio conceptam ea.
+			An eum viris mnesarchum, mei nullam noster id. Quo ex minim ubique inciderint, rebum vituperata mea ei. In duo delenit accumsan, cum ponderum tincidunt reformidans cu. Et sed nulla quando doctus.
+			Quis clita sit cu, ad vim scripta legendos. Sea ad purto deserunt similique, ut quodsi scriptorem nec, cu mel justo admodum comprehensam. Augue percipit pertinax ex duo. Has ullum tollit regione te, sint dicam vix ea, ius cu liber quaeque eloquentiam. Civibus antiopam vituperatoribus in sed.
+			Unum illum eripuit eu mea, mei duis ullum omnes ne. Vis mazim choro atomorum in, postulant scribentur dissentiunt ex ius. Eos cu odio putant. An simul integre definitiones quo. Ad exerci audiam deserunt ius, per id aperiam honestatis.
+		</div>
+    <footer>
+     <dl>
+      <dt>autore:    </dt>
+      <dd><address><a href="personalPage.html">Maria Rossi</a></address></dd>
+     </dl>
+    </footer>
+	</article>
+</section>
+<aside id=myAside class=aside>
+    <p id="demo">Dove ti trovi?</p>
+	<button onclick="getLocation()">Prova!</button>
+	<script>
+	var x=document.getElementById("demo");
+	function getLocation(){
+	if (navigator.geolocation){
+	//funzione supportata o autorizzata,
+	//richiamo la funzione di callback showPosition
+		navigator.geolocation.getCurrentPosition(showPosition);
+		}else{
+			x.innerHTML= "Geolocalizzazione non supportata";
+		}
+	}
+	function showPosition(position){
+		x.innerHTML="Latitudine: " + position.coords.latitude +
+		" Longitudine: " + position.coords.longitude; }
+	</script>
+	<p id="musica">Ascolta</p>
+	<audio controls>
+	<source src="musica.mp3" type="audio/mpeg">
+	</audio>
+</aside>
+</body>
+<footer id="main">
+<center>
+<img id=”drag” src=superblog.png draggable="true"
+	ondragstart=”drag(event)”>
+	<div id="drop" ondrop="drop(event)"
+	ondragover="allowDrop(event)"></div>
+	<script>
+		function drag(ev){
+		ev.dataTransfer.setData("mioTrasferimento",ev.target.id);
+		}
+		function drag(ev){
+		ev.dataTransfer.setData("mioTrasferimento",ev.target.id);
+		}
+		function drop(ev){
+		ev.preventDefault();
+		var data=ev.dataTransfer.getData("mioTrasferimento");
+		ev.target.appendChild(document.getElementById(data));
+		}
+	</script>
+	</center>
+</footer>
+</html>
