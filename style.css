@@ -1,7 +1,11 @@
 header{
-	color: blue
+	color: #d84315
 }
-footer {}
+footer {
+	background-color: #d84315;
+	margin-left: 300px;
+    margin-right: 300px;
+}
 .sidenav {
   height: 100%;
   width: 300px;
@@ -9,7 +13,7 @@ footer {}
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #ce1212;
+  background-color: #ff8a65;
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -20,7 +24,7 @@ footer {}
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #ce1212;
+  background-color: #ff8a65;
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -43,11 +47,6 @@ th, td {
     column-gap:40px;
     column-rule:3px;
 	border: 2px solid;
-}
-
-#footer{
-	 background-color: #5178e6;
-	 bottom:0;
 }
 
 audio, button{

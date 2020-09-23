@@ -6,7 +6,7 @@
 </head>
 <body>
 <header class="main">
-    <h1 color=#ce1212>SuperBlog</h1>
+    <h1 color=#d84315>SuperBlog</h1>
 	<p>Benvenuti su SuperBlog, dove troverai risposta ad ogni tua domanda.</p>
 </header>
 	<nav id=mySidenav class=sidenav>
@@ -19,17 +19,16 @@
 	</nav>
 
 	
-<section class=main>
+<section>
 	
-	<h1>In Primo Piano</h1>
+	<h1 class=main>In Primo Piano</h1>
 	
 	<article>
-		<h2>Lorem ipsum!</h2>
-		<p>Lorem ipsum dolor sit amet, brute tantas per in, te his sumo choro volutpat.</p><a href="articlePage.html" target=”_blank” alt=”articolo”>Leggi l'articolo!</a>
+		<h2 class=main>Lorem ipsum!</h2>
+		<p class=main>Lorem ipsum dolor sit amet, brute tantas per in, te his sumo choro volutpat.</p><a href="articlePage.html" target=”_blank” alt=”articolo” class=main>Leggi l'articolo!</a>
     <footer>
      <dl>
-      <dt>autore:    </dt>
-      <dd><address><a href="personalPage.html">Maria Rossi</a></address></dd>
+      <dt>autore:</dt><dd><address><a href="personalPage.html">Maria Rossi</a></address></dd>
      </dl>
     </footer>
 	</article>
@@ -60,22 +59,7 @@
 	</aside>
 <footer>
 <center>
-<img id=”drag” src=superblog.png draggable="true"
-	ondragstart=”drag(event)”>
-	<div id="drop" ondrop="drop(event)"
-	ondragover="allowDrop(event)"></div>
-	<script>
-		function drag(ev){
-		ev.dataTransfer.setData("mioTrasferimento",ev.target.id);
-		}
-		function drag(ev){
-		ev.dataTransfer.setData("mioTrasferimento",ev.target.id);
-		}
-		function drop(ev){
-		ev.preventDefault();
-		var data=ev.dataTransfer.getData("mioTrasferimento");
-		ev.target.appendChild(document.getElementById(data));
-		}
-	</script>
+<img src=superblog.png />
+</center>
 </footer>
 </html>
